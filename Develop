@@ -6,14 +6,15 @@ class Alumno:
         return f"{self.nombre} {self.nota}\n"
 
     def hola(self):
-        if int(self.nota)>10:
+        if int(self.nota)>=10:
 
             print(f"Hola, tu nombre es {self.nombre}, y sacaste {self.nota}, por eso aprobaste la materia")
         else:
-            print("Reprobaste tonto")
+            print(f"Hola, tu nombre es {self.nombre}, y sacaste {self.nota} Reprobaste tonto")
+            
+    
 
     
 
-Santiago=Alumno("Santi", 5)
+Santiago=Alumno("Santi", 10)
 Santiago.hola()
-
